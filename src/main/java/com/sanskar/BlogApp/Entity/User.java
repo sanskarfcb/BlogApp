@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.management.relation.Role;
+import java.net.ProtocolFamily;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -41,5 +42,6 @@ public class User {
 
     @OneToMany(mappedBy = "commenter", cascade = CascadeType.ALL)
     private List<Comment> comments = new ArrayList<>();
+
 
 }
